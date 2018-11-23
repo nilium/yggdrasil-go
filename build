@@ -7,19 +7,19 @@ do
   d) DEBUG=true;;
   esac
 done
-export GOPATH=$PWD
 echo "Downloading..."
-go get -d -v
-go get -d -v yggdrasil
-for file in *.go ; do
-  echo "Building: $file"
-  #go build $@ $file
+go get -d -v ./src/yggdrasil
+for pkg in `go list ./cmd/...`; do
+  binname="bin/$(basename "$file")"
+  echo "Building: $pkg"
+  go get -d -v "$pkg"
+  #go build $@ $pkg
   if [ $DEBUG ]; then
-    go build -tags debug -v $file
+    go build -tags debug -v "$pkg"
   else
-    go build -ldflags="-s -w" -v $file
+    go build -ldflags="-s -w" -v "$pkg"
   fi
   if [ $UPX ]; then
-    upx --brute ${file%.go}
+    upx --brute "$binname"
   fi
 done

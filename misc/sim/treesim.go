@@ -11,7 +11,7 @@ import "log"
 import "runtime/pprof"
 import "flag"
 
-import . "yggdrasil"
+import . "github.com/yggdrasil-network/yggdrasil-go/src/yggdrasil"
 
 ////////////////////////////////////////////////////////////////////////////////
 

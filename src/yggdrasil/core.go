@@ -8,8 +8,8 @@ import (
 	"net"
 	"regexp"
 
-	"yggdrasil/config"
-	"yggdrasil/defaults"
+	"github.com/yggdrasil-network/yggdrasil-go/src/yggdrasil/config"
+	"github.com/yggdrasil-network/yggdrasil-go/src/yggdrasil/defaults"
 )
 
 // The Core object represents the Yggdrasil node. You should create a Core

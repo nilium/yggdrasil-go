@@ -15,13 +15,13 @@ You're encouraged to play with it, but it is strongly advised not to use it for 
 
 ## Building
 
-1. Install Go (tested on 1.9+, [godeb](https://github.com/niemeyer/godeb) is recommended for debian-based linux distributions).
+1. Install Go (tested on 1.11+, [godeb](https://github.com/niemeyer/godeb) is recommended for debian-based linux distributions).
 2. Clone this repository.
 2. `./build`
 
 Note that you can cross-compile for other platforms and architectures by specifying the `$GOOS` and `$GOARCH` environment variables, for example, `GOOS=windows ./build` or `GOOS=linux GOARCH=mipsle ./build`.
 
-The build script sets its own `$GOPATH`, so the build environment is self-contained.
+The build script assumes you're using Go modules with Go 1.11+, so the build environment is self-contained when cloned outside of a GOPATH. You may build in a GOPATH, but this can cause yggdrasil to leak dependencies.
 
 ## Running
 

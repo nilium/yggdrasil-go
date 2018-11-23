@@ -6,7 +6,8 @@ import (
 	"bytes"
 	"errors"
 	"time"
-	"yggdrasil/defaults"
+
+	"github.com/yggdrasil-network/yggdrasil-go/src/yggdrasil/defaults"
 
 	"github.com/songgao/packets/ethernet"
 	"github.com/yggdrasil-network/water"

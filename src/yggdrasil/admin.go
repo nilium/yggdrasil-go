@@ -14,7 +14,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"yggdrasil/defaults"
+	"github.com/yggdrasil-network/yggdrasil-go/src/yggdrasil/defaults"
 )
 
 // TODO: Add authentication

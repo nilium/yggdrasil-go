@@ -11,7 +11,7 @@ import "encoding/json"
 import "strconv"
 import "os"
 
-import "yggdrasil/defaults"
+import "github.com/yggdrasil-network/yggdrasil-go/src/yggdrasil/defaults"
 
 type admin_info map[string]interface{}
 

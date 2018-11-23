@@ -3,7 +3,7 @@ package yggdrasil
 // This manages the tun driver to send/recv packets to/from applications
 
 import (
-	"yggdrasil/defaults"
+	"github.com/yggdrasil-network/yggdrasil-go/src/yggdrasil/defaults"
 
 	"github.com/songgao/packets/ethernet"
 	"github.com/yggdrasil-network/water"
